@@ -24,6 +24,18 @@ export default function Home() {
       status: "Open tool",
     },
     {
+      name: "JSON to CSV Converter",
+      description: "Flatten JSON data into spreadsheet-ready CSV.",
+      href: "/tools/json-to-csv",
+      status: "Open tool",
+    },
+    {
+      name: "JWT Decoder",
+      description: "Inspect JWT headers, payloads, and expiration locally.",
+      href: "/tools/jwt-decoder",
+      status: "Open tool",
+    },
+    {
       name: "Timestamp Converter",
       description: "Convert Unix timestamps, dates, and timezones instantly.",
       href: "/tools/timestamp-converter",

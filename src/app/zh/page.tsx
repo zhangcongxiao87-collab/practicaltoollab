@@ -23,6 +23,16 @@ const tools = [
     href: "/zh/tools/json-diff",
   },
   {
+    name: "JSON 转 CSV",
+    description: "展开 JSON 数据并转换成适合表格使用的 CSV。",
+    href: "/zh/tools/json-to-csv",
+  },
+  {
+    name: "JWT 在线解码",
+    description: "在本地查看 JWT 头部、载荷和过期时间。",
+    href: "/zh/tools/jwt-decoder",
+  },
+  {
     name: "Unix 时间戳转换",
     description: "转换时间戳、日期与不同时区，支持批量处理。",
     href: "/zh/tools/timestamp-converter",

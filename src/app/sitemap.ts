@@ -3,6 +3,8 @@ import type { MetadataRoute } from "next";
 const tools = [
   "json-formatter",
   "json-diff",
+  "json-to-csv",
+  "jwt-decoder",
   "timestamp-converter",
   "cidr-calculator",
   "cron-expression-tool",
