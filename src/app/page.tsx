@@ -23,8 +23,8 @@ export default function Home() {
     {
       name: "Cron Expression Tool",
       description: "Build cron expressions and preview upcoming run times.",
-      href: "#",
-      status: "Coming soon",
+      href: "/tools/cron-expression-tool",
+      status: "Open tool",
     },
   ];
 
