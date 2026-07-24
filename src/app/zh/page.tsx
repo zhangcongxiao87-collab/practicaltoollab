@@ -33,6 +33,16 @@ const tools = [
     href: "/zh/tools/jwt-decoder",
   },
   {
+    name: "Base64 编码与解码",
+    description: "安全地编码 Unicode 文本或解码 Base64。",
+    href: "/zh/tools/base64-encoder-decoder",
+  },
+  {
+    name: "Nginx 日志分析",
+    description: "查看状态码、热门路径、流量和错误请求。",
+    href: "/zh/tools/nginx-log-analyzer",
+  },
+  {
     name: "Unix 时间戳转换",
     description: "转换时间戳、日期与不同时区，支持批量处理。",
     href: "/zh/tools/timestamp-converter",

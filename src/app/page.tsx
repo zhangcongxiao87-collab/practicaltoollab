@@ -36,6 +36,18 @@ export default function Home() {
       status: "Open tool",
     },
     {
+      name: "Base64 Encoder & Decoder",
+      description: "Encode Unicode text or decode Base64 safely.",
+      href: "/tools/base64-encoder-decoder",
+      status: "Open tool",
+    },
+    {
+      name: "Nginx Log Analyzer",
+      description: "Explore status codes, top paths, traffic, and errors.",
+      href: "/tools/nginx-log-analyzer",
+      status: "Open tool",
+    },
+    {
       name: "Timestamp Converter",
       description: "Convert Unix timestamps, dates, and timezones instantly.",
       href: "/tools/timestamp-converter",

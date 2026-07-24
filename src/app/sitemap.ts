@@ -5,6 +5,8 @@ const tools = [
   "json-diff",
   "json-to-csv",
   "jwt-decoder",
+  "base64-encoder-decoder",
+  "nginx-log-analyzer",
   "timestamp-converter",
   "cidr-calculator",
   "cron-expression-tool",
