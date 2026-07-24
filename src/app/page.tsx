@@ -17,8 +17,8 @@ export default function Home() {
     {
       name: "CIDR Calculator",
       description: "Calculate network ranges, masks, and usable IP addresses.",
-      href: "#",
-      status: "Coming soon",
+      href: "/tools/cidr-calculator",
+      status: "Open tool",
     },
     {
       name: "Cron Expression Tool",
