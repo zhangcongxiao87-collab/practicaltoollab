@@ -1,12 +1,18 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import CidrCalculator from "@/components/CidrCalculator";
+import SiteHeader from "@/components/SiteHeader";
 
 export const metadata: Metadata = {
   title: "CIDR & IPv4 Subnet Calculator — Practical Tool Lab",
   description:
     "Calculate IPv4 network addresses, broadcast addresses, subnet masks, host ranges, and split CIDR blocks into smaller subnets.",
-  alternates: { canonical: "/tools/cidr-calculator" },
+  alternates: {
+    canonical: "/tools/cidr-calculator",
+    languages: {
+      en: "/tools/cidr-calculator",
+      "zh-CN": "/zh/tools/cidr-calculator",
+    },
+  },
 };
 
 export default function CidrCalculatorPage() {
@@ -17,15 +23,7 @@ export default function CidrCalculatorPage() {
         <div className="absolute -right-40 top-1/3 h-96 w-96 rounded-full bg-violet-500/10 blur-3xl" />
       </div>
       <div className="relative mx-auto max-w-6xl px-4 py-6 sm:px-6">
-        <nav className="mb-12 flex items-center justify-between">
-          <Link href="/" className="text-sm font-semibold uppercase tracking-[0.22em] text-emerald-400">
-            Practical Tool Lab
-          </Link>
-          <div className="flex items-center gap-2 rounded-full border border-emerald-400/20 bg-emerald-400/5 px-3 py-1.5 text-xs text-emerald-300">
-            <span className="h-1.5 w-1.5 rounded-full bg-emerald-400" />
-            IPv4
-          </div>
-        </nav>
+        <SiteHeader switchHref="/zh/tools/cidr-calculator" badge="IPv4" />
         <header className="mb-8">
           <p className="mb-4 text-sm font-medium text-emerald-400">
             Network tools / Subnetting

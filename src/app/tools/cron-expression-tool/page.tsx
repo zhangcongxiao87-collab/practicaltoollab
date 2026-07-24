@@ -1,12 +1,18 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import CronExpressionTool from "@/components/CronExpressionTool";
+import SiteHeader from "@/components/SiteHeader";
 
 export const metadata: Metadata = {
   title: "Cron Expression Generator & Parser — Practical Tool Lab",
   description:
     "Build, validate, and explain five-part cron expressions. Preview upcoming run times in multiple timezones.",
-  alternates: { canonical: "/tools/cron-expression-tool" },
+  alternates: {
+    canonical: "/tools/cron-expression-tool",
+    languages: {
+      en: "/tools/cron-expression-tool",
+      "zh-CN": "/zh/tools/cron-expression-tool",
+    },
+  },
 };
 
 export default function CronExpressionToolPage() {
@@ -17,15 +23,10 @@ export default function CronExpressionToolPage() {
         <div className="absolute -right-40 top-1/3 h-96 w-96 rounded-full bg-emerald-400/10 blur-3xl" />
       </div>
       <div className="relative mx-auto max-w-6xl px-4 py-6 sm:px-6">
-        <nav className="mb-12 flex items-center justify-between">
-          <Link href="/" className="text-sm font-semibold uppercase tracking-[0.22em] text-emerald-400">
-            Practical Tool Lab
-          </Link>
-          <div className="flex items-center gap-2 rounded-full border border-violet-400/20 bg-violet-400/5 px-3 py-1.5 text-xs text-violet-300">
-            <span className="h-1.5 w-1.5 rounded-full bg-violet-400" />
-            5-part cron
-          </div>
-        </nav>
+        <SiteHeader
+          switchHref="/zh/tools/cron-expression-tool"
+          badge="5-part cron"
+        />
         <header className="mb-8">
           <p className="mb-4 text-sm font-medium text-emerald-400">
             Developer tools / Scheduling

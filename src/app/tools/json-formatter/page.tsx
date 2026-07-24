@@ -1,12 +1,18 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import JsonFormatter from "@/components/JsonFormatter";
+import SiteHeader from "@/components/SiteHeader";
 
 export const metadata: Metadata = {
   title: "JSON Formatter & Validator — Practical Tool Lab",
   description:
     "Format, validate, minify, sort, and explore JSON securely in your browser. Your data never leaves your device.",
-  alternates: { canonical: "/tools/json-formatter" },
+  alternates: {
+    canonical: "/tools/json-formatter",
+    languages: {
+      en: "/tools/json-formatter",
+      "zh-CN": "/zh/tools/json-formatter",
+    },
+  },
 };
 
 const features = [
@@ -36,18 +42,10 @@ export default function JsonFormatterPage() {
       </div>
 
       <div className="relative mx-auto max-w-[1500px] px-4 py-6 sm:px-6 lg:px-8">
-        <nav className="mb-12 flex items-center justify-between">
-          <Link
-            href="/"
-            className="text-sm font-semibold uppercase tracking-[0.22em] text-emerald-400"
-          >
-            Practical Tool Lab
-          </Link>
-          <div className="flex items-center gap-2 rounded-full border border-emerald-400/20 bg-emerald-400/5 px-3 py-1.5 text-xs text-emerald-300">
-            <span className="h-1.5 w-1.5 rounded-full bg-emerald-400" />
-            100% local processing
-          </div>
-        </nav>
+        <SiteHeader
+          switchHref="/zh/tools/json-formatter"
+          badge="100% local processing"
+        />
 
         <header className="mb-8">
           <p className="mb-4 text-sm font-medium text-emerald-400">

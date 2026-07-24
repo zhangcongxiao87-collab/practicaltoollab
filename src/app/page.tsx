@@ -1,4 +1,13 @@
+import type { Metadata } from "next";
 import Link from "next/link";
+import SiteHeader from "@/components/SiteHeader";
+
+export const metadata: Metadata = {
+  alternates: {
+    canonical: "/",
+    languages: { en: "/", "zh-CN": "/zh" },
+  },
+};
 
 export default function Home() {
   const tools = [
@@ -31,9 +40,7 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-slate-950 text-white">
       <main className="mx-auto max-w-6xl px-6 py-20 sm:py-28">
-        <p className="mb-5 text-sm font-semibold uppercase tracking-[0.24em] text-emerald-400">
-          Practical Tool Lab
-        </p>
+        <SiteHeader switchHref="/zh" />
         <h1 className="max-w-4xl text-5xl font-bold tracking-tight sm:text-7xl">
           Simple tools.
           <span className="block text-emerald-400">Practical results.</span>
