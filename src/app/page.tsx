@@ -25,8 +25,7 @@ export default function Home() {
           Practical Tool Lab
         </p>
         <h1 className="max-w-4xl text-5xl font-bold tracking-tight sm:text-7xl">
-          Simple tools.
-          <span className="block text-emerald-400">Practical results.</span>
+          潇&amp;美
         </h1>
         <p className="mt-7 max-w-2xl text-lg leading-8 text-slate-300">
           Free online tools that help you solve everyday tasks quickly, without
