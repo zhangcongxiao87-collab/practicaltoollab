@@ -9,20 +9,20 @@ export default function Home() {
       status: "Open tool",
     },
     {
-      name: "Password Generator",
-      description: "Create strong passwords in a few seconds.",
+      name: "Timestamp Converter",
+      description: "Convert Unix timestamps, dates, and timezones instantly.",
+      href: "/tools/timestamp-converter",
+      status: "Open tool",
+    },
+    {
+      name: "CIDR Calculator",
+      description: "Calculate network ranges, masks, and usable IP addresses.",
       href: "#",
       status: "Coming soon",
     },
     {
-      name: "Markdown Converter",
-      description: "Turn Markdown into clean, shareable content.",
-      href: "#",
-      status: "Coming soon",
-    },
-    {
-      name: "AI Prompt Generator",
-      description: "Build clearer prompts for everyday AI tasks.",
+      name: "Cron Expression Tool",
+      description: "Build cron expressions and preview upcoming run times.",
       href: "#",
       status: "Coming soon",
     },
@@ -35,7 +35,8 @@ export default function Home() {
           Practical Tool Lab
         </p>
         <h1 className="max-w-4xl text-5xl font-bold tracking-tight sm:text-7xl">
-          {"\u6f47&\u7f8e"}
+          Simple tools.
+          <span className="block text-emerald-400">Practical results.</span>
         </h1>
         <p className="mt-7 max-w-2xl text-lg leading-8 text-slate-300">
           Free online tools that help you solve everyday tasks quickly, without
@@ -55,7 +56,7 @@ export default function Home() {
                 {tool.status}
                 {tool.href !== "#" && (
                   <span className="ml-1 inline-block transition group-hover:translate-x-1">
-                    →
+                    {"\u2192"}
                   </span>
                 )}
               </p>
@@ -64,7 +65,7 @@ export default function Home() {
         </section>
 
         <footer className="mt-20 border-t border-white/10 pt-8 text-sm text-slate-500">
-          © {new Date().getFullYear()} Practical Tool Lab
+          {"\u00a9"} {new Date().getFullYear()} Practical Tool Lab
         </footer>
       </main>
     </div>
