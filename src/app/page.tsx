@@ -18,6 +18,12 @@ export default function Home() {
       status: "Open tool",
     },
     {
+      name: "JSON Diff & Compare",
+      description: "Find added, removed, and changed JSON values by path.",
+      href: "/tools/json-diff",
+      status: "Open tool",
+    },
+    {
       name: "Timestamp Converter",
       description: "Convert Unix timestamps, dates, and timezones instantly.",
       href: "/tools/timestamp-converter",

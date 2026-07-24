@@ -2,6 +2,7 @@ import type { MetadataRoute } from "next";
 
 const tools = [
   "json-formatter",
+  "json-diff",
   "timestamp-converter",
   "cidr-calculator",
   "cron-expression-tool",

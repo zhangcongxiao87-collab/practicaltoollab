@@ -18,6 +18,11 @@ const tools = [
     href: "/zh/tools/json-formatter",
   },
   {
+    name: "JSON 对比与差异查找",
+    description: "按路径查找两份 JSON 中新增、删除和修改的值。",
+    href: "/zh/tools/json-diff",
+  },
+  {
     name: "Unix 时间戳转换",
     description: "转换时间戳、日期与不同时区，支持批量处理。",
     href: "/zh/tools/timestamp-converter",
