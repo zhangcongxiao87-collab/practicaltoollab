@@ -44,6 +44,25 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
   ];
 
+  for (const page of ["about", "contact", "privacy"]) {
+    pages.push(
+      {
+        url: `${baseUrl}/${page}`,
+        lastModified: now,
+        changeFrequency: "yearly",
+        priority: 0.5,
+        alternates: { languages: { en: `${baseUrl}/${page}`, "zh-CN": `${baseUrl}/zh/${page}` } },
+      },
+      {
+        url: `${baseUrl}/zh/${page}`,
+        lastModified: now,
+        changeFrequency: "yearly",
+        priority: 0.4,
+        alternates: { languages: { en: `${baseUrl}/${page}`, "zh-CN": `${baseUrl}/zh/${page}` } },
+      },
+    );
+  }
+
   for (const tool of tools) {
     const englishUrl = `${baseUrl}/tools/${tool}`;
     const chineseUrl = `${baseUrl}/zh/tools/${tool}`;
