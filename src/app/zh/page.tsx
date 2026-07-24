@@ -43,6 +43,16 @@ const tools = [
     href: "/zh/tools/nginx-log-analyzer",
   },
   {
+    name: "URL 编码与解码",
+    description: "编码、解码并解析 URL 和查询参数。",
+    href: "/zh/tools/url-encoder-decoder",
+  },
+  {
+    name: "正则表达式测试",
+    description: "测试匹配、捕获组、标志和替换效果。",
+    href: "/zh/tools/regex-tester",
+  },
+  {
     name: "Unix 时间戳转换",
     description: "转换时间戳、日期与不同时区，支持批量处理。",
     href: "/zh/tools/timestamp-converter",

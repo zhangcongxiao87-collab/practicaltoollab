@@ -7,6 +7,8 @@ const tools = [
   "jwt-decoder",
   "base64-encoder-decoder",
   "nginx-log-analyzer",
+  "url-encoder-decoder",
+  "regex-tester",
   "timestamp-converter",
   "cidr-calculator",
   "cron-expression-tool",

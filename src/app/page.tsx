@@ -48,6 +48,18 @@ export default function Home() {
       status: "Open tool",
     },
     {
+      name: "URL Encoder & Decoder",
+      description: "Encode, decode, and inspect URLs and query parameters.",
+      href: "/tools/url-encoder-decoder",
+      status: "Open tool",
+    },
+    {
+      name: "Regex Tester",
+      description: "Test matches, capture groups, flags, and replacements.",
+      href: "/tools/regex-tester",
+      status: "Open tool",
+    },
+    {
       name: "Timestamp Converter",
       description: "Convert Unix timestamps, dates, and timezones instantly.",
       href: "/tools/timestamp-converter",
