@@ -13,8 +13,23 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://www.practicaltoollab.com"),
   title: "Practical Tool Lab",
   description: "Free online tools for everyday tasks.",
+  openGraph: {
+    title: "Practical Tool Lab",
+    description: "Fast, private, browser-based developer tools.",
+    url: "/",
+    siteName: "Practical Tool Lab",
+    images: [{ url: "/og.png", width: 1536, height: 908 }],
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Practical Tool Lab",
+    description: "Fast, private, browser-based developer tools.",
+    images: ["/og.png"],
+  },
 };
 
 export default function RootLayout({

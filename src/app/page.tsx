@@ -1,20 +1,30 @@
+import Link from "next/link";
+
 export default function Home() {
   const tools = [
     {
       name: "JSON Formatter",
       description: "Format, validate, and read JSON more easily.",
+      href: "/tools/json-formatter",
+      status: "Open tool",
     },
     {
       name: "Password Generator",
       description: "Create strong passwords in a few seconds.",
+      href: "#",
+      status: "Coming soon",
     },
     {
       name: "Markdown Converter",
       description: "Turn Markdown into clean, shareable content.",
+      href: "#",
+      status: "Coming soon",
     },
     {
       name: "AI Prompt Generator",
       description: "Build clearer prompts for everyday AI tasks.",
+      href: "#",
+      status: "Coming soon",
     },
   ];
 
@@ -25,7 +35,7 @@ export default function Home() {
           Practical Tool Lab
         </p>
         <h1 className="max-w-4xl text-5xl font-bold tracking-tight sm:text-7xl">
-          潇&amp;美
+          {"\u6f47&\u7f8e"}
         </h1>
         <p className="mt-7 max-w-2xl text-lg leading-8 text-slate-300">
           Free online tools that help you solve everyday tasks quickly, without
@@ -34,16 +44,22 @@ export default function Home() {
 
         <section className="mt-16 grid gap-4 sm:grid-cols-2">
           {tools.map((tool) => (
-            <article
+            <Link
               key={tool.name}
-              className="rounded-2xl border border-white/10 bg-white/5 p-6"
+              href={tool.href}
+              className="group rounded-2xl border border-white/10 bg-white/5 p-6 transition hover:-translate-y-0.5 hover:border-emerald-400/30 hover:bg-white/[0.07]"
             >
               <h2 className="text-xl font-semibold">{tool.name}</h2>
               <p className="mt-2 text-slate-400">{tool.description}</p>
               <p className="mt-5 text-sm font-medium text-emerald-400">
-                Coming soon
+                {tool.status}
+                {tool.href !== "#" && (
+                  <span className="ml-1 inline-block transition group-hover:translate-x-1">
+                    →
+                  </span>
+                )}
               </p>
-            </article>
+            </Link>
           ))}
         </section>
 

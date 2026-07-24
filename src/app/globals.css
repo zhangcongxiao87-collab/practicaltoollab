@@ -17,3 +17,36 @@ body {
   color: var(--foreground);
   font-family: var(--font-geist-sans), Arial, Helvetica, sans-serif;
 }
+
+button,
+label {
+  -webkit-tap-highlight-color: transparent;
+}
+
+.tool-button {
+  border: 1px solid rgb(255 255 255 / 0.1);
+  border-radius: 0.75rem;
+  padding: 0.5rem 0.875rem;
+  color: rgb(203 213 225);
+  font-size: 0.875rem;
+  font-weight: 500;
+  transition:
+    border-color 150ms ease,
+    color 150ms ease,
+    background-color 150ms ease;
+}
+
+.tool-button:hover {
+  border-color: rgb(255 255 255 / 0.2);
+  background: rgb(255 255 255 / 0.04);
+  color: white;
+}
+
+.tool-button:disabled {
+  cursor: not-allowed;
+  opacity: 0.4;
+}
+
+::selection {
+  background: rgb(52 211 153 / 0.28);
+}
