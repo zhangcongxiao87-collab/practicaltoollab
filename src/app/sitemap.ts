@@ -12,6 +12,7 @@ const tools = [
   "timestamp-converter",
   "cidr-calculator",
   "cron-expression-tool",
+  "uuid-generator",
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {

@@ -67,6 +67,11 @@ const tools = [
     description: "生成和解释 Cron 表达式，预览后续运行时间。",
     href: "/zh/tools/cron-expression-tool",
   },
+  {
+    name: "UUID 在线生成器",
+    description: "安全生成单个或批量 UUID v4 标识符。",
+    href: "/zh/tools/uuid-generator",
+  },
 ];
 
 export default function ChineseHome() {

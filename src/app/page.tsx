@@ -77,6 +77,12 @@ export default function Home() {
       href: "/tools/cron-expression-tool",
       status: "Open tool",
     },
+    {
+      name: "UUID Generator",
+      description: "Generate secure UUID v4 identifiers individually or in bulk.",
+      href: "/tools/uuid-generator",
+      status: "Open tool",
+    },
   ];
 
   return (

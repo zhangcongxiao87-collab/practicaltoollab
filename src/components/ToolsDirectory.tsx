@@ -11,6 +11,7 @@ const tools = [
   ["Timestamp", "时间戳转换", "timestamp-converter"],
   ["CIDR Calculator", "CIDR 计算器", "cidr-calculator"],
   ["Cron Tool", "Cron 工具", "cron-expression-tool"],
+  ["UUID Generator", "UUID 生成器", "uuid-generator"],
   ["Nginx Logs", "Nginx 日志", "nginx-log-analyzer"],
 ];
 
