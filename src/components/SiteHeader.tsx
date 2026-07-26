@@ -19,6 +19,9 @@ export default function SiteHeader({
       </Link>
       <div className="flex items-center gap-2">
         <div className="hidden items-center gap-4 text-xs text-slate-500 md:flex">
+          <Link href={locale === "zh" ? "/zh/workbench" : "/workbench"} className="font-medium text-emerald-300/80 hover:text-emerald-300">
+            {locale === "zh" ? "工作台" : "Workbench"}
+          </Link>
           <Link href={locale === "zh" ? "/zh/about" : "/about"} className="hover:text-white">
             {locale === "zh" ? "关于" : "About"}
           </Link>

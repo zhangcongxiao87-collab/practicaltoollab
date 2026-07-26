@@ -155,7 +155,7 @@ function TreeNode({
   );
 }
 
-export default function JsonFormatter() {
+export default function JsonFormatter({ locale = "en" }: { locale?: "en" | "zh" }) {
   const [input, setInput] = useState(SAMPLE);
   const [output, setOutput] = useState(
     JSON.stringify(JSON.parse(SAMPLE), null, 2),
@@ -211,6 +211,11 @@ export default function JsonFormatter() {
     link.download = "formatted.json";
     link.click();
     URL.revokeObjectURL(url);
+  }
+  function openInWorkbench() {
+    if (!output) return;
+    window.localStorage.setItem("ptl-workbench-input", output);
+    window.location.href = locale === "zh" ? "/zh/workbench" : "/workbench";
   }
   function readFile(file?: File) {
     if (!file) return;
@@ -297,6 +302,9 @@ export default function JsonFormatter() {
               ))}
             </div>
             <div className="flex items-center gap-3">
+              <button type="button" onClick={openInWorkbench} disabled={!output} className="text-xs font-medium text-emerald-400 transition hover:text-emerald-300 disabled:opacity-40">
+                {locale === "zh" ? "发送到工作台" : "Open in Workbench"}
+              </button>
               <button type="button" onClick={downloadOutput} disabled={!output} className="text-xs text-slate-400 transition hover:text-white disabled:opacity-40">Download</button>
               <button type="button" onClick={copyOutput} disabled={!output} className="rounded-lg border border-white/10 px-3 py-1.5 text-xs text-slate-300 transition hover:border-white/20 hover:text-white disabled:opacity-40">
                 {copied ? "Copied!" : "Copy"}

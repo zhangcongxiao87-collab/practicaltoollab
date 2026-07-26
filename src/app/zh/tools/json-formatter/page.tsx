@@ -35,7 +35,7 @@ export default function ChineseJsonFormatterPage() {
             整理难以阅读的 JSON、定位语法错误，并用树形结构查看复杂数据。
           </p>
         </header>
-        <JsonFormatter />
+        <JsonFormatter locale="zh" />
         <section className="mx-auto max-w-3xl py-20">
           <h2 className="text-2xl font-bold">安全处理 JSON</h2>
           <p className="mt-4 text-sm leading-7 text-slate-400">

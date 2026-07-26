@@ -43,6 +43,20 @@ export default function sitemap(): MetadataRoute.Sitemap {
         },
       },
     },
+    {
+      url: `${baseUrl}/workbench`,
+      lastModified: now,
+      changeFrequency: "monthly",
+      priority: 0.9,
+      alternates: { languages: { en: `${baseUrl}/workbench`, "zh-CN": `${baseUrl}/zh/workbench` } },
+    },
+    {
+      url: `${baseUrl}/zh/workbench`,
+      lastModified: now,
+      changeFrequency: "monthly",
+      priority: 0.85,
+      alternates: { languages: { en: `${baseUrl}/workbench`, "zh-CN": `${baseUrl}/zh/workbench` } },
+    },
   ];
 
   for (const page of ["about", "contact", "privacy"]) {

@@ -97,6 +97,11 @@ export default function Home() {
           Free online tools that help you solve everyday tasks quickly, without
           unnecessary complexity.
         </p>
+        <div className="mt-8">
+          <Link href="/workbench" className="inline-flex rounded-xl bg-emerald-400 px-5 py-3 text-sm font-bold text-slate-950 transition hover:bg-emerald-300">
+            Open the private Workbench →
+          </Link>
+        </div>
 
         <section className="mt-16 grid gap-4 sm:grid-cols-2">
           {tools.map((tool) => (

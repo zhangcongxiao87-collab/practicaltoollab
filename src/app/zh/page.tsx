@@ -86,6 +86,11 @@ export default function ChineseHome() {
         <p className="mt-7 max-w-2xl text-lg leading-8 text-slate-300">
           免费、快速、无需注册的在线工具，帮助开发者和运维人员高效完成日常任务。
         </p>
+        <div className="mt-8">
+          <Link href="/zh/workbench" className="inline-flex rounded-xl bg-emerald-400 px-5 py-3 text-sm font-bold text-slate-950 transition hover:bg-emerald-300">
+            打开隐私优先工作台 →
+          </Link>
+        </div>
         <section className="mt-16 grid gap-4 sm:grid-cols-2">
           {tools.map((tool) => (
             <Link
