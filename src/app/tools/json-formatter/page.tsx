@@ -99,6 +99,68 @@ export default function JsonFormatterPage() {
           </ol>
         </section>
 
+        <section className="mx-auto max-w-3xl border-t border-white/10 py-16">
+          <p className="text-sm font-medium text-emerald-400">Common use cases</p>
+          <h2 className="mt-3 text-2xl font-bold tracking-tight">
+            When a JSON formatter saves time
+          </h2>
+          <div className="mt-7 grid gap-4 sm:grid-cols-2">
+            {[
+              [
+                "Debug an API response",
+                "Paste a compact response from fetch, Postman, or your browser&apos;s network panel to spot a missing field or unexpected value.",
+              ],
+              [
+                "Review configuration files",
+                "Make package, deployment, and app configuration files readable before committing them to source control.",
+              ],
+              [
+                "Inspect webhook payloads",
+                "Expand nested event data and verify the keys your integration receives without sharing customer data with a third party.",
+              ],
+              [
+                "Prepare JSON for a teammate",
+                "Sort keys and format a clean example that is easier to paste into a bug report, ticket, or documentation page.",
+              ],
+            ].map(([title, description]) => (
+              <article
+                key={title}
+                className="rounded-xl border border-white/10 bg-white/[0.03] p-5"
+              >
+                <h3 className="font-semibold text-white">{title}</h3>
+                <p className="mt-2 text-sm leading-6 text-slate-400">{description}</p>
+              </article>
+            ))}
+          </div>
+        </section>
+
+        <section className="mx-auto max-w-3xl border-t border-white/10 py-16">
+          <h2 className="text-2xl font-bold tracking-tight">
+            JSON Formatter FAQ
+          </h2>
+          <div className="mt-6 space-y-4">
+            {[
+              [
+                "Is my JSON uploaded?",
+                "No. Formatting, validation, sorting, and tree rendering run in your browser. Your input is not sent to a Practical Tool Lab server.",
+              ],
+              [
+                "What does valid JSON require?",
+                "JSON requires double-quoted property names and strings, commas between items, and no trailing comma. The validator reports where parsing stopped when it finds a problem.",
+              ],
+              [
+                "What is the difference between format and minify?",
+                "Formatting adds indentation and line breaks for people. Minifying removes unnecessary whitespace to reduce the size of a JSON payload.",
+              ],
+            ].map(([question, answer]) => (
+              <article key={question} className="rounded-xl border border-white/10 p-5">
+                <h3 className="font-semibold text-white">{question}</h3>
+                <p className="mt-2 text-sm leading-6 text-slate-400">{answer}</p>
+              </article>
+            ))}
+          </div>
+        </section>
+
         <footer className="border-t border-white/10 py-8 text-sm text-slate-600">
           © {new Date().getFullYear()} Practical Tool Lab
         </footer>
